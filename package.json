@@ -2,12 +2,26 @@
   "name": "split-retain",
   "version": "1.0.0",
   "description": "Split a string and preserve the delimiters.",
-  "keywords": ["string", "split", "explode", "separator", "delimiter", "keep", "retain", "preserve", "leading", "trailing"],
+  "keywords": [
+    "string",
+    "split",
+    "explode",
+    "separator",
+    "delimiter",
+    "keep",
+    "retain",
+    "preserve",
+    "leading",
+    "trailing"
+  ],
   "repository": "https://github.com/ghornich/split-retain",
   "main": "split-retain.js",
   "dependencies": {},
   "devDependencies": {
+    "browserify": "^13.1.0",
+    "gulp": "^3.9.1",
     "istanbul": "^0.4.5",
+    "minifyify": "^7.3.3",
     "tape": "^4.6.0"
   },
   "scripts": {
