@@ -1,5 +1,7 @@
 'use strict';
 
+exports = module.exports = splitRetain;
+
 /**
  * splitRetain
  *
@@ -10,7 +12,7 @@
  * @return {Array} split text
  * @throws {Error}
  */
-exports = module.exports = function splitRetain(string, separator, options) {
+function splitRetain(string, separator, options) {
 	options = defaults(options, {});
 	options.leadingSeparator = defaults(options.leadingSeparator, false);
 
@@ -55,7 +57,9 @@ exports = module.exports = function splitRetain(string, separator, options) {
 	}
 
 	return result;
-};
+}
+
+splitRetain['VERSION'] = '1.0.0';
 
 function separatorToRegex(separator) {
 	if (separator instanceof RegExp) {

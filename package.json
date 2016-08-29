@@ -26,7 +26,8 @@
   },
   "scripts": {
     "test": "node test.js",
-    "cover": "istanbul cover test.js"
+    "cover": "istanbul cover test.js",
+    "build-browser": "node_modules/.bin/gulp build-browser"
   },
   "author": {
     "name": "Gergely Hornich",
