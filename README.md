@@ -5,16 +5,18 @@ Split a string and preserve the delimiters.
 
 ## Install
 
-**Node.js**
+**Node.js**  
 `npm install split-retain --save`
-**Browser**
+
+**Browser**  
 Include the full or minified version on your webpage from `browser/`
 
 ## Usage
 
-**Node.js**
+**Node.js**  
 `var splitRetain = require('split-retain');`
-**Browser**
+
+**Browser**  
 `<script src="path/to/split-retain.min.js">`
 
 ```js
