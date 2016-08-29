@@ -1,12 +1,19 @@
 # split-retain
 Split a string and preserve the delimiters.
 
-## WORK IN PROGRESS
+## Stability: 2 - UNSTABLE
+
+* [Install](#install)
+* [Usage](#usage)
+* [Documentation](#documentation)
+* [Tests](#tests)
+* [Coverage](#coverage)
+* [License](#license)
 
 ## Install
 
 **Node.js**  
-`npm install split-retain --save`
+~~`npm install split-retain --save`~~
 
 **Browser**  
 Include the full or minified version on your webpage from `browser/`
@@ -37,8 +44,16 @@ splitRetain('home/jack/images/photo12.jpeg', '/', { leadingSeparator: true })
 | -------- | ---- | ---------- |
 | string | String | string to split |
 | separator | String / RegExp | one character, or regex (must have grouping and global flag, e.g. `/(\d+)/g`) |
-| [options] | Object | - |
-| [options.leadingSeparator] | Boolean | if `true`, the separator will be placed at the beginning of the split tokens |
+| [options = {}] | Object | - |
+| [options.leadingSeparator = false] | Boolean | if `true`, the separator will be placed at the beginning of the split tokens |
+
+## Tests
+
+`npm test`
+
+## Coverage
+
+`npm run cover`
 
 ## License
 
