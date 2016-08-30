@@ -1,8 +1,6 @@
 # split-retain
 Split a string and preserve the delimiters.
 
-## Stability: 2 - UNSTABLE
-
 * [Install](#install)
 * [Usage](#usage)
 * [Documentation](#documentation)
@@ -14,7 +12,7 @@ Split a string and preserve the delimiters.
 ## Install
 
 **Node.js**  
-~~`npm install split-retain --save`~~
+`npm install split-retain --save`
 
 **Browser**  
 Include the full or minified version on your webpage from `browser/`
@@ -62,6 +60,7 @@ splitRetain('home/jack/images/photo12.jpeg', '/', { leadingSeparator: true })
 * create 'publish steps'
 * replace browserify with UMD?
 * more examples in Usage
+* lint
 * ...
 
 ## License
