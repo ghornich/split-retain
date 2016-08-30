@@ -8,6 +8,7 @@ Split a string and preserve the delimiters.
 * [Documentation](#documentation)
 * [Tests](#tests)
 * [Coverage](#coverage)
+* [TODO](#todo)
 * [License](#license)
 
 ## Install
@@ -44,8 +45,8 @@ splitRetain('home/jack/images/photo12.jpeg', '/', { leadingSeparator: true })
 | -------- | ---- | ---------- |
 | string | String | string to split |
 | separator | String / RegExp | one character, or regex (must have grouping and global flag, e.g. `/(\d+)/g`) |
-| [options = {}] | Object | - |
-| [options.leadingSeparator = false] | Boolean | if `true`, the separator will be placed at the beginning of the split tokens |
+| [options = `{}`] | Object | - |
+| [options.leadingSeparator = `false`] | Boolean | if `true`, the separator will be placed at the beginning of the split tokens |
 
 ## Tests
 
@@ -54,6 +55,14 @@ splitRetain('home/jack/images/photo12.jpeg', '/', { leadingSeparator: true })
 ## Coverage
 
 `npm run cover`
+
+## TODO
+
+* create 'publish' gulp task
+* create 'publish steps'
+* replace browserify with UMD?
+* more examples in Usage
+* ...
 
 ## License
 
