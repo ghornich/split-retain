@@ -69,7 +69,6 @@ splitRetain('home/jack/images/photo12.jpeg', '/', { leadingSeparator: true })
 
 ## TODO
 
-* create 'publish' gulp task
 * create 'publish steps'
 * replace browserify with UMD?
 * more examples in Examples

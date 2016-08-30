@@ -65,7 +65,7 @@ function splitRetain(string, separator, options) {
     return result;
 }
 
-splitRetain['VERSION'] = '1.0.0';
+splitRetain['VERSION'] = '1.0.1';
 
 function separatorToRegex(separator) {
     if (separator instanceof RegExp) {
