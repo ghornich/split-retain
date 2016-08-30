@@ -4,7 +4,7 @@ Split a string and preserve the delimiters.
 <!-- toc -->
 
 - [Install](#install)
-- [Usage](#usage)
+- [Examples](#examples)
 - [Documentation](#documentation)
   * [Arguments](#arguments)
   * [Results](#results)
