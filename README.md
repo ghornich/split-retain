@@ -1,13 +1,19 @@
 # split-retain
 Split a string and preserve the delimiters.
 
-* [Install](#install)
-* [Usage](#usage)
-* [Documentation](#documentation)
-* [Tests](#tests)
-* [Coverage](#coverage)
-* [TODO](#todo)
-* [License](#license)
+<!-- toc -->
+
+- [Install](#install)
+- [Usage](#usage)
+- [Documentation](#documentation)
+  * [Arguments](#arguments)
+  * [Results](#results)
+- [Tests](#tests)
+- [Coverage](#coverage)
+- [TODO](#todo)
+- [License](#license)
+
+<!-- tocstop -->
 
 ## Install
 
