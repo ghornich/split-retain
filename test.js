@@ -14,9 +14,9 @@ test('splitRetain', function (t) {
     t.deepEqual(splitRetain('', '/'), ['']);
     t.deepEqual(splitRetain('aaa', '/'), ['aaa']);
 
-	//------------
+    //------------
 
-	t.deepEqual(splitRetain('home/joe/taxes.txt', '/'), ['home/', 'joe/', 'taxes.txt']);
+    t.deepEqual(splitRetain('home/joe/taxes.txt', '/'), ['home/', 'joe/', 'taxes.txt']);
     t.deepEqual(splitRetain('home/joe/taxes.txt', '/', { leadingSeparator: true }), ['home', '/joe', '/taxes.txt']);
 
     t.deepEqual(splitRetain('/home/joe/taxes.txt', '/'), ['/', 'home/', 'joe/', 'taxes.txt']);
