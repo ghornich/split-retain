@@ -20,16 +20,14 @@ Split a string and preserve the delimiters.
 **Node.js**  
 `npm install split-retain --save`
 
-**Browser**  
-Include the full or minified version on your webpage from `browser/`
-
-## Usage
-
-**Node.js**  
 `var splitRetain = require('split-retain');`
 
 **Browser**  
+Include the full or minified version on your webpage from `browser/`, then use `splitRetain(...)`.
+
 `<script src="path/to/split-retain.min.js">`
+
+## Examples
 
 ```js
 splitRetain('home/jack/images/photo12.jpeg', '/')
@@ -74,7 +72,7 @@ splitRetain('home/jack/images/photo12.jpeg', '/', { leadingSeparator: true })
 * create 'publish' gulp task
 * create 'publish steps'
 * replace browserify with UMD?
-* more examples in Usage
+* more examples in Examples
 * changelog
 * lint
 * ...
