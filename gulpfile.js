@@ -35,7 +35,8 @@ gulp.task('update-source-version', function () {
     var newSource = source.replace(/(splitRetain\['VERSION'\] = ')[^']+/, '$1' + packageJson.version);
 
     if (source === newSource) {
-        throw new Error('source version change failed: version didn\'t change');
+        //throw new Error('source version change failed: version didn\'t change');
+        console.error('WARNING: source version didn\'t change');
     }
 
     fs.writeFileSync('split-retain.js', newSource, { encoding: 'utf-8' });
