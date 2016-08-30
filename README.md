@@ -46,16 +46,16 @@ splitRetain('home/jack/images/photo12.jpeg', '/', { leadingSeparator: true })
 ### Arguments
 
 | argument | type | desription |
-| --- | --- | --- |
+| :-- | :-- | :-- |
 | string | String | string to split |
 | separator | String<br>———<br>RegExp | single character<br>———<br>must have grouping parentheses and global flag, e.g. `/(\d+)/g` |
-| [options = `{}`] | Object | - |
+| [options = `{}`] | Object | — |
 | [options.leadingSeparator = `false`] | Boolean | if `true`, the separator will be placed at the beginning of the split tokens |
 
 ### Results
 
 | property | type | description |
-| --- | --- | --- |
+| :-- | :-- | :-- |
 | @return | String[] | array of split tokens |
 | @throws | Error | on incorrect argument types |
 
