@@ -20,6 +20,7 @@
   "devDependencies": {
     "browserify": "^13.1.0",
     "gulp": "^3.9.1",
+    "gulp-publish-tasks": "github:ghornich/gulp-publish-tasks",
     "istanbul": "^0.4.5",
     "markdown-toc": "^0.12.16",
     "minifyify": "^7.3.3",
