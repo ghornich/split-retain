@@ -3,11 +3,19 @@
 var fs = require('fs');
 var gulp = require('gulp');
 var browserify = require('browserify');
-var markdownTOC = require('markdown-toc');
 var packageJson = require('./package.json');
+var version = packageJson.version;
+var publishTasks = require('gulp-publish-tasks');
+
+
 
 gulp.task('pre-publish', ['update-source-version', 'build-browser', 'update-readme-toc']);
+
 gulp.task('build-browser', ['build-browser-full', 'build-browser-min']);
+gulp.task('update-readme-toc', () => publishTasks.updateMarkdownTOC('README.md'));
+gulp.task('update-source-version', () => publishTasks.updateSourceVersion('split-retain.js', version));
+
+
 
 gulp.task('build-browser-full', function () {
     return browserify('browser-build.js')
@@ -22,24 +30,6 @@ gulp.task('build-browser-min', function () {
     .bundle()
     .on('error', handleStreamError)
     .pipe(fs.createWriteStream('browser/split-retain.min.js'));
-});
-
-gulp.task('update-readme-toc', function () {
-    var readme = fs.readFileSync('README.md', { encoding: 'utf-8' });
-    readme = markdownTOC.insert(readme);
-    fs.writeFileSync('README.md', readme, { encoding: 'utf-8' });
-});
-
-gulp.task('update-source-version', function () {
-    var source = fs.readFileSync('split-retain.js', { encoding: 'utf-8' });
-    var newSource = source.replace(/(splitRetain\['VERSION'\] = ')[^']+/, '$1' + packageJson.version);
-
-    if (source === newSource) {
-        //throw new Error('source version change failed: version didn\'t change');
-        console.error('WARNING: source version didn\'t change');
-    }
-
-    fs.writeFileSync('split-retain.js', newSource, { encoding: 'utf-8' });
 });
 
 function handleStreamError(error) {
