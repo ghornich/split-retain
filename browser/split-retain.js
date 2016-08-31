@@ -65,6 +65,7 @@ function splitRetain(string, separator, options) {
     return result;
 }
 
+/* publish-tasks:auto-version */
 splitRetain['VERSION'] = '1.0.1';
 
 function separatorToRegex(separator) {
