@@ -1,11 +1,9 @@
 'use strict';
 
-var fs = require('fs');
 var gulp = require('gulp');
-var browserify = require('browserify');
 var packageJson = require('./package.json');
 var version = packageJson.version;
-var publishTasks = require('../gulp-publish-tasks');
+var publishTasks = require('gulp-publish-tasks');
 
 gulp.task('pre-publish', ['update-source-version', 'build-browser-full', 'build-browser-min', 'update-readme-toc']);
 
