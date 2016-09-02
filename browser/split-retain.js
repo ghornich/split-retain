@@ -6,6 +6,8 @@ window.splitRetain = require('./split-retain');
 },{"./split-retain":2}],2:[function(require,module,exports){
 'use strict';
 
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+
 exports = module.exports = splitRetain;
 
 /**
@@ -48,8 +50,7 @@ function splitRetain(string, separator, options) {
     while (tokens.length > 0) {
         if (tokens.length === 1) {
             result.push(tokens.shift());
-        }
-        else {
+        } else {
             result.push(tokens.shift() + tokens.shift());
         }
     }
@@ -88,16 +89,15 @@ function assert(condition, message) {
 }
 
 assert.type = function (variable, expectedType, message) {
-    if (typeof variable !== expectedType) {
+    if ((typeof variable === 'undefined' ? 'undefined' : _typeof(variable)) !== expectedType) {
         throw new Error(message);
     }
-}
+};
 
 function defaults(optionalData, defaultData) {
     if (optionalData === undefined) {
         return defaultData;
-    }
-    else {
+    } else {
         return optionalData;
     }
 }
